@@ -1,3 +1,7 @@
+import Styled from "styled-components";
+
+// eslint-disable-next-line no-native-reassign
+export default StyleSheet = Styled.div`
 .App {
   text-align: center;
 }
@@ -36,3 +40,5 @@
     transform: rotate(360deg);
   }
 }
+
+`;
