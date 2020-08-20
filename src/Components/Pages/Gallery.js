@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import StyleSheet from "./Styles/HomeStyles";
-import logo from "../Assets/logo.svg";
+import logo from "../../Assets/logo.svg";
 
 export default class Home extends Component {
   render() {
     return (
-      <StyleSheet>
-        <h1>Home Page</h1>
+      <React.Fragment>
+        <h1>Gallery</h1>
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
@@ -23,7 +22,7 @@ export default class Home extends Component {
             </a>
           </header>
         </div>
-      </StyleSheet>
+      </React.Fragment>
     );
   }
 }
