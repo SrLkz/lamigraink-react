@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import StyleSheet from "./Styles/HomeStyles";
+import "./Styles/App.sass";
 import logo from "../Assets/logo.svg";
 
 export default class Home extends Component {
   render() {
     return (
-      <StyleSheet>
+      <React.Fragment>
         <h1>Home Page</h1>
         <div className="App">
           <header className="App-header">
@@ -23,7 +23,7 @@ export default class Home extends Component {
             </a>
           </header>
         </div>
-      </StyleSheet>
+      </React.Fragment>
     );
   }
 }

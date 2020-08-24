@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
+import Footer from "./Components/Footer";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from "./Components/Home";
@@ -25,6 +26,8 @@ function App() {
           <Route exact path="/ThePlace" component={ThePlace} />
         </Switch>
       </BrowserRouter>
+
+      <Footer />
     </React.Fragment>
   );
 }
