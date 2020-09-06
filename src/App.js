@@ -1,9 +1,9 @@
 import React from "react";
-import Navigation from "./Navigation";
+import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Home from "./Components/Home";
+import Home from "./Components/Pages/Home";
 import BookOnline from "./Components/Pages/BookOnline";
 import Gallery from "./Components/Pages/Gallery";
 import Aftercare from "./Components/Pages/Aftercare";
@@ -12,10 +12,9 @@ import ThePlace from "./Components/Pages/ThePlace";
 
 function App() {
   return (
-    <React.Fragment>
+    <>
       <BrowserRouter>
         <Navigation />
-
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/Home" component={Home} />
@@ -28,7 +27,7 @@ function App() {
       </BrowserRouter>
 
       <Footer />
-    </React.Fragment>
+    </>
   );
 }
 

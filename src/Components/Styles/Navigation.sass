@@ -1,11 +1,17 @@
 @import "./StylesVariables.sass"
 
+a.navbar-brand
+    &:hover
+        color: $baseBT !important
+
 ul.navbar-nav
     padding-right: 1rem
     padding-top: .5rem
+
 .link 
     color: $baseColor
     font-weight: bold
+    font-size: large
     padding: 0.2rem
     &:hover
         color: $hoverBtn
@@ -15,8 +21,9 @@ ul.navbar-nav
     background-color: $black !important
     opacity: $opacity90
 
-@media (min-width:720px)
+
+@media (min-width:768px)
     .link
-        margin-left: 5rem
+        margin-left: 4rem
         
 
